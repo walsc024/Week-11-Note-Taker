@@ -1,9 +1,12 @@
 const router = require("express").Router();
 const path = require("path");
 const fs = require("fs");
+const DB = fs.readFile("../db/db.json")
+
 
 router.get("/api/notes", (request, response) => {
     // use fs to read db.json file and return notes as json file
+    response.json(DB)
 })
 
 router.post("/api/notes", (request, response) =>{
