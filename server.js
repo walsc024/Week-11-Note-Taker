@@ -16,18 +16,3 @@ app.use("/", html)
 app.listen(PORT, () => {
     console.log("Server Running")
 })
-/*
-app.get("/api/notes", function(req, res){
-
-    res.json(notes);
-});
-
-app.post("/api/notes", function(req, res){
-
-    let newNote = req.body;
-    notes.push(newNote);
-    updateDB();
-    return console.log("Added new note: " +newNote.title);
-})
-;
-*/
